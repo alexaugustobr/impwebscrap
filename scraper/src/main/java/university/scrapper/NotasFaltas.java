@@ -1,3 +1,5 @@
+package university.scrapper;
+
 public class NotasFaltas {
 
     private String unidade;

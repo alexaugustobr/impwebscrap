@@ -1,15 +1,17 @@
+package university.scrapper;
+
 import java.util.HashMap;
 import java.util.Map;
 
-public class ImpAuthenticatedUser {
+public class AuthenticatedUser {
 
     private final String ra;
     private final String password;
-    private Map<String, String> authCookies;
-    private String name;
-    private String courseName;
+    private final Map<String, String> authCookies;
+    private final String name;
+    private final String courseName;
 
-    public ImpAuthenticatedUser(String ra, String password, Map<String, String> authCookies, String name, String courseName) {
+    public AuthenticatedUser(String ra, String password, Map<String, String> authCookies, String name, String courseName) {
         this.ra = ra;
         this.password = password;
         this.authCookies = authCookies;

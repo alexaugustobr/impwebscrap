@@ -1,10 +1,12 @@
-public class ImpStudentInfo {
+package university.scrapper;
+
+public class StudentInfo {
 
     private String ra;
     private String name;
     private String courseName;
 
-    public ImpStudentInfo(String ra, String name, String courseName) {
+    public StudentInfo(String ra, String name, String courseName) {
         this.ra = ra;
         this.name = name;
         this.courseName = courseName;
