@@ -1,4 +1,4 @@
-package university.scrapper;
+package university.scraper;
 
 public class LoginException extends Exception {
     public LoginException(Exception e) {
