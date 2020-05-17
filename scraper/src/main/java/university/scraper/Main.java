@@ -1,6 +1,7 @@
 package university.scraper;
 
 import university.domain.MuralMessage;
+import university.domain.SchoolEnrolment;
 
 import java.util.List;
 
@@ -11,7 +12,7 @@ public class Main {
         UniversityClient universityClient = new UniversityClient(
                 new AuthWorker(),
                 new DashboardWorker(),
-                null
+                new SchoolEnrolmentWorker()
         );
 
         UserSession user = universityClient.login(args[0], args[1]);
@@ -21,8 +22,12 @@ public class Main {
         muralMessages.stream().map(MuralMessage::getDescription).forEach(System.out::println);
         
         System.out.println(user.getCursoNome());
-        
-
+    
+        List<SchoolEnrolment> schoolEnrolment = universityClient.getSchoolEnrolment(user);
+    
+        schoolEnrolment.stream().map(SchoolEnrolment::getReferenceCode).forEach(System.out::println);
+    
+    
     }
 
 }

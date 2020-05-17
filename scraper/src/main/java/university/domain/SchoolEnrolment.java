@@ -1,9 +1,6 @@
 package university.domain;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.util.UUID;
 
@@ -11,6 +8,7 @@ import java.util.UUID;
 @NoArgsConstructor
 @Getter
 @Builder
+@ToString
 public class SchoolEnrolment {
 	
 	private UUID uuid;

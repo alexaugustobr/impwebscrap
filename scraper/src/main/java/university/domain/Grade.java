@@ -12,7 +12,7 @@ import java.util.UUID;
 public class Grade {
 	
 	private UUID uuid;
-	private CourseClass aCourseClass;
+	private CourseClass courseClass;
 	private Discipline discipline;
 	private Course course;
 	private Student student;
